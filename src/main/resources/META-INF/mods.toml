@@ -1,0 +1,28 @@
+modLoader="javafml" #mandatory
+loaderVersion="[39,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="MIT"   #改为MIT
+[[mods]] #mandatory
+modId="hiromod" #mandatory 改
+version="${file.jarVersion}" #mandatory
+displayName="hiro's mod" #mandatory 你的模组展示名称
+logoFile="examplemod.png" #optional
+credits="米福雷有限股份公司測試用模組" #optional
+authors="王昭偉" #optional
+# The description text for the mod (multi line!) (#mandatory，模组简述)
+description='''
+測試用模組
+'''
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.hiromod]] #optional 改为modid
+modId="forge" #mandatory
+mandatory=true #mandatory
+versionRange="[39,)" #mandatory
+ordering="NONE"
+side="BOTH"
+# Here's another dependency
+[[dependencies.hiromod]]  #改为modid
+modId="minecraft"
+mandatory=true
+versionRange="[1.18.1,1.19)"
+ordering="NONE"
+side="BOTH"
